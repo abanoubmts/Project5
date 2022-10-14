@@ -10,6 +10,12 @@ please find the below implementaion details :-
 
 after build the above stpes we will face the below issue 
 android:exported needs to be explicitly specified for <activity>. Apps targeting Android 12 and higher are required to specify an explicit value for `android:exported` when the corresponding component has an intent filter defined. 
+  
+6-  modify activity tags  android:name=".authentication.AuthenticationActivity"  / android.intent.action.MAIN /  android.intent.category.LAUNCHER
+
+  after build we face another issue missing google-services.json  
+  
+7- so we add google-services.json   
 
 
 
