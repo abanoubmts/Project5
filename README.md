@@ -17,7 +17,24 @@ android:exported needs to be explicitly specified for <activity>. Apps targeting
   after build we face another issue missing google-services.json  
   
 7- so we add google-services.json related to you after register account on firbase 
+  
+8- regarding for Geofence implementation  ,  
+  8.1 - Geofence is an imitated variable that describes a real geographical area of interest. 
+  8.2 - Geofencing API allows you to define the outline or limit of a specific area. When users cross the Geofence, they are alerted by a notification.
+  8.3 - Geofencing API employs the use of device sensors to detect a user’s location in a battery-efficient manner.
 
+ so we need to add in gradle the below commands 
+  //Maps & Geofencing
+    implementation "com.google.android.gms:play-services-location:$playServicesVersion"
+    implementation "com.google.android.gms:play-services-maps:$playServicesVersion"
+  
+ 9- modify mainfest.xml to add the GeofenceBroadcastReceiver tag to register the BroadCastReceiver:
+  <receiver
+            android:name=".locationreminders.geofence.GeofenceBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true" />
+ 10- The BroadcastReceiver listens for Geofence transitions and provides a notification , when a device enters a particular geofence area.
+  through GeofenceTransitionsJobIntentService.enqueueWork(context, intent)
 
 
 
