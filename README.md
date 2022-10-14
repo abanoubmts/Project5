@@ -1,4 +1,6 @@
 # Project5
+please find the below implementaion details :- 
+-------------------------------------------------------
 1- Share project before any implment the required changes 
 2- import authentication firbase "import com.firebase.ui.auth.AuthUI" and use function called (launchSign_AUTH) 
 3- Add Constants object to collect all used constants 
