@@ -2,7 +2,8 @@
 please find the below implementaion details :- 
 -------------------------------------------------------
 1- Share project before any implment the required changes 
-2- import authentication firbase "import com.firebase.ui.auth.AuthUI" and use function called (launchSign_AUTH) 
+and kindly note we add layout tag in authentication layout to enable data binding 
+2- import authentication firbase "import com.firebase.ui.auth.AuthUI" and use function called (launchSign_AUTH)  and kindly note this way of 3 ways for firbase authentication 
 3- Add Constants object to collect all used constants 
   note : you can refer to constants class 
 4- Create activity result to start another activity and receive a result from firbase result for authentication status 
@@ -15,7 +16,8 @@ android:exported needs to be explicitly specified for <activity>. Apps targeting
 
   after build we face another issue missing google-services.json  
   
-7- so we add google-services.json   
+7- so we add google-services.json related to you after register account on firbase 
+
 
 
 
